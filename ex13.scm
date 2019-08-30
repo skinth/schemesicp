@@ -1,0 +1,7 @@
+(define (square x) (* x x))
+(define (max x y) (if (> x y) x y))
+(define (maxThree x y z) (max (max x y) z))
+(define (secondlarger x y z) (cond ((= x (maxthree x y z)) (max y z))
+							                ((= y (maxthree x y z)) (max x z))
+								        ((= z (maxthree x y z)) (max x y))))
+(define (ex13 x y z) (+ (square (maxthree x y z)) (square (secondlarger x y z))))
